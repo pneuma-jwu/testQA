@@ -1,0 +1,24 @@
+image: joyzoursky/python-chromedriver:3.6
+
+before_script:
+  - pip install -r requirements.txt
+
+stages:
+  - test
+  - report
+
+test_suite_1:
+  stage: test
+  script:
+    - python -u test_suite_1.py
+
+test_suite_2:
+  stage: test
+  script:
+    - python -u test_suite_2.py
+
+send_report:
+  stage: report
+  script:
+    - python send_report.py
+

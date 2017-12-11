@@ -48,13 +48,13 @@ logger.critical('critical message')
 '''
 now_date = str(datetime.now().strftime('%m%d'))
 #screenshots_folder = r"D:\Pneuma Project\AutoTest\Cliq_webdriver\Test\\"
-screenshots_folder = r"D:\Jason\Documents\QAAutomation\Screenshots\\" 
+screenshots_folder = r"./" 
 
 
 def callback():
 	logger.debug("Entered callback()")
 	#chromedriver = executable_path=r'C:\chromedriver\chromedriver.exe'
-	chromedriver  = executable_path=r'D:\Install\chromedriver\chromedriver.exe'
+	chromedriver  = executable_path=r'/usr/local/bin/chromedriver'
 	driver = webdriver.Chrome(chromedriver)
 	driver.maximize_window()
 	driver.implicitly_wait(10)

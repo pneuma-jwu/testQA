@@ -3,4 +3,3 @@ var webdriver = require('selenium-webdriver'),
     until = webdriver.until;
 
 var firefox = require('selenium-webdriver/firefox');
-
